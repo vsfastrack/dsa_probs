@@ -35,11 +35,48 @@ public class ArrayUtils {
             end--;
         }
     }
+    public static int findFirstOccurence(int [] arr , int low , int high , int key){
+        if(low == high)
+            return low;
+        if(low < high){
+            int mid = (low + high) / 2;
+            if(arr[mid] > key)
+                return findFirstOccurence(arr , low , mid -1 , key);
+            else if(arr[mid] < key)
+                return findFirstOccurence(arr , mid+1 , high , key);
+            else if(mid > low && arr[mid] == key && arr[mid-1] == key)
+                return findFirstOccurence(arr , low , mid-1 , key);
+            else if(mid > low && arr[mid] == key && arr[mid-1] != key)
+                return mid;
+        }
+        return -1;
+    }
+    public static int findLastOccurence(int [] arr , int low , int high , int key){
+        if(low == high)
+            return low;
+        if(low < high){
+            int mid = (low + high) / 2;
+            if(arr[mid] > key)
+                return findLastOccurence(arr , low , mid -1 , key);
+            else if(arr[mid] < key)
+                return findLastOccurence(arr , mid+1 , high , key);
+            else if(mid < high && arr[mid] == key && arr[mid+1] == key)
+                return findLastOccurence(arr , mid+1 , high , key);
+            else if(mid < high && arr[mid] == key && arr[mid+1] != key)
+                return mid;
+        }
+        return -1;
+    }
     public static void printSingleResult(int element){
         System.out.println("Result = "+element);
     }
+    public static void printSingleResult(boolean result){
+        System.out.println("Result = "+result);
+    }
     public static void printArr(int [] arr){
         System.out.println("Resultant array = ");
+        if(arr == null)
+            return;
         for(int element:arr){
             System.out.print(element+"  ");
         }
