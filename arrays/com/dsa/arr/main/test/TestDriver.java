@@ -32,6 +32,15 @@ public class TestDriver {
         //FindFourElementsSum.test();
         //NumberWithOddOccurences.test();
         //GivenSumTriplet.test();
-        SubArrayWithGivenSum.test();
+        //SubArrayWithGivenSum.test();
+        //FixedPoint.test();
+        //CountOccurences.test();
+        //EquillibriumIndex.test();
+        //RepeatingElements.test();
+        //FloorAndCeiling.test();
+        //MajorityElement.test();
+        //FrequencySort.test();
+        //Leaders.test();
+        MergeArrays.test();
     }
 }
