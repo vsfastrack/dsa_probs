@@ -1,5 +1,7 @@
 package com.dsa.arr.main.test;
 
+import com.dsa.arr.main.orderstatistics.*;
+import com.dsa.arr.main.rearrangement.*;
 import com.dsa.arr.main.search.*;
 
 public class TestDriver {
@@ -41,6 +43,27 @@ public class TestDriver {
         //MajorityElement.test();
         //FrequencySort.test();
         //Leaders.test();
-        MergeArrays.test();
+        //MergeArrays.test();
+        //MIssingNumber.test();
+        //SearchInfinite.test();
+        //ClosestPair.test();
+        //SubArrayWithSumZero.test();
+        //AlternativeSorting.test();
+        //MoveAllNegToEnd.test();
+        //AbsDiffSorter.test();
+        //MoveAllNegToEndWithConstantSpace.test();
+        //ReorderByIndexArr.test();
+        //RearrangeByProducts.test();
+        //ZigZagFashion.test();
+        //WaveSorter.test();
+        //SpecifiedSorter.test();
+        //ReplaceWithGreatestRight.test();
+        //SeggregateEvenAndOdds.test();
+        //LongestSubarray.test();
+        //KMostOccuringElements.test();
+        //KthLargest.test();
+        //AtleastKGreaterElements.test();
+        //StrictSubArrays.test();
+        NumberOfZeroesFlip.test();
     }
 }
